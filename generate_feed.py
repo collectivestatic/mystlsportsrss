@@ -134,25 +134,35 @@ def get_city_sc_games():
         print(f"[City SC] fetch failed: {e}")
         return items
 
+    window_start = datetime.now(timezone.utc) - timedelta(days=DAYS_BEHIND)
+    window_end = datetime.now(timezone.utc) + timedelta(days=DAYS_AHEAD)
+
     for event in data.get("events", []):
         try:
-            competitors = event["competitions"][0]["competitors"]
+            competition = event["competitions"][0]
+            competitors = competition["competitors"]
             city_sc = next(
                 c for c in competitors
                 if str(c.get("team", {}).get("id")) == str(CITY_SC_TEAM_ID)
             )
             opponent = next(c for c in competitors if c is not city_sc)
 
+            game_dt = _parse_iso(event["date"], ["%Y-%m-%dT%H:%MZ", "%Y-%m-%dT%H:%M:%SZ"])
+
+            # This endpoint returns the whole season with no date filtering,
+            # so keep only games in the same window used for the Cardinals.
+            if not (window_start <= game_dt <= window_end):
+                continue
+
             is_home = city_sc.get("homeAway") == "home"
             venue = "Home" if is_home else "Away"
-            status_desc = event.get("status", {}).get("type", {}).get("description", "Scheduled")
-            completed = event.get("status", {}).get("type", {}).get("completed", False)
 
-            game_dt = _parse_iso(event["date"], ["%Y-%m-%dT%H:%MZ", "%Y-%m-%dT%H:%M:%SZ"])
+            # Status lives under competitions[0].status, not the event root.
+            status_desc = competition.get("status", {}).get("type", {}).get("description", "Scheduled")
+            completed = competition.get("status", {}).get("type", {}).get("completed", False)
 
             opponent_id = str(opponent.get("team", {}).get("id"))
             opponent_name = opponent["team"]["displayName"]
-            # ESPN fills TBD bracket slots with our own team's info instead of "TBD"
             if opponent_id == str(CITY_SC_TEAM_ID):
                 opponent_name = "TBD"
 
@@ -177,7 +187,6 @@ def get_city_sc_games():
 
     print(f"[City SC] parsed {len(items)} games")
     return items
-
 
 # ---- Cardinals league news (ESPN, filtered) ------------------------------
 
