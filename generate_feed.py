@@ -28,7 +28,7 @@ DAYS_AHEAD = 14               # include upcoming games
 FEED_TITLE = "STL Sports Schedule — Cardinals & City SC"
 # IMPORTANT: update this to match your actual GitHub Pages URL once deployed,
 # e.g. https://yourusername.github.io/stl-sports-feed/feed.xml
-FEED_LINK = "https://YOUR_USERNAME.github.io/YOUR_REPO/feed.xml"
+FEED_LINK = "https://collectivestatic.github.io/mystlsportsrss/feed.xml"
 FEED_DESCRIPTION = "Auto-updated schedule and results for the St. Louis Cardinals and St. Louis City SC"
 
 REQUEST_TIMEOUT = 15  # seconds
@@ -105,7 +105,7 @@ def get_cardinals_games():
 
 def get_city_sc_games():
     url = (
-        "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/teams/"
+        "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/teams/21812/schedule"
         f"{CITY_SC_TEAM_ID}/schedule"
     )
 
