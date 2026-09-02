@@ -105,8 +105,8 @@ def get_cardinals_games():
 
 def get_city_sc_games():
     url = (
-        "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/teams/21812/schedule"
-        f"{CITY_SC_TEAM_ID}/schedule"
+        "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/teams"
+        f"21812/schedule"
     )
 
     items = []
