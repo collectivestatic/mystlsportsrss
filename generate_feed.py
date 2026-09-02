@@ -30,7 +30,7 @@ CITY_SC_TEAM_ID = 21812       # St. Louis City SC (ESPN team id, MLS)
 DAYS_BEHIND = 3               # include recently completed games
 DAYS_AHEAD = 14               # include upcoming games
 
-NEWS_LIMIT = 8                # max articles pulled per news source, per team
+NEWS_LIMIT = 5                # max articles pulled per news source, per team
 
 FEED_TITLE = "STL Sports Schedule & News — Cardinals & City SC"
 # IMPORTANT: this must match your actual GitHub Pages URL,
