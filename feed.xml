@@ -1,37 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <rss version="2.0">
   <channel>
-    <title>STL Sports Schedule &amp; News — Cardinals &amp; City SC</title>
+    <title>STL Cardinals Schedule &amp; News</title>
     <link>https://collectivestatic.github.io/mystlsportsrss/feed.xml</link>
-    <description>Auto-updated schedule and news for the St. Louis Cardinals and St. Louis City SC</description>
-    <lastBuildDate>Wed, 02 Sep 2026 17:06:08 +0000</lastBuildDate>
+    <description>Auto-updated schedule and news for the St. Louis Cardinals</description>
+    <lastBuildDate>Wed, 02 Sep 2026 17:41:56 +0000</lastBuildDate>
     <item>
       <title>Cardinals (Home) vs Pittsburgh Pirates — Final</title>
       <description>Pittsburgh Pirates at St. Louis Cardinals. Status: Final. Final score: Pittsburgh Pirates 5 – 4 St. Louis Cardinals.</description>
       <link>https://collectivestatic.github.io/mystlsportsrss/feed.xml</link>
       <guid isPermaLink="false">cardinals-823010</guid>
       <pubDate>Sun, 30 Aug 2026 18:15:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>City SC (Home) vs FC Dallas — Full Time</title>
-      <description>City SC (Home) vs FC Dallas — Full Time. Final score: City SC {'$ref': 'http://sports.core.api.espn.pvt/v2/sports/soccer/leagues/usa.1/events/761769/competitions/761769/competitors/21812/scores/38?lang=en&amp;region=us', 'value': 3.0, 'displayValue': '3', 'winner': False, 'source': {'id': '38', 'description': 'SA.ENVOY'}} – {'$ref': 'http://sports.core.api.espn.pvt/v2/sports/soccer/leagues/usa.1/events/761769/competitions/761769/competitors/185/scores/38?lang=en&amp;region=us', 'value': 3.0, 'displayValue': '3', 'winner': False, 'source': {'id': '38', 'description': 'SA.ENVOY'}} FC Dallas.</description>
-      <link>https://collectivestatic.github.io/mystlsportsrss/feed.xml</link>
-      <guid isPermaLink="false">citysc-761769</guid>
-      <pubDate>Sun, 30 Aug 2026 23:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>City SC News: St. Louis CITY SC vs. FC Dallas - Game Highlights</title>
-      <description>Watch the Game Highlights from St. Louis CITY SC vs. FC Dallas, 08/30/2026</description>
-      <link>https://www.espn.com/video/clip/_/id/49778459/st-louis-city-sc-vs-fc-dallas-game-highlights</link>
-      <guid isPermaLink="false">citysc-news-49778459</guid>
-      <pubDate>Mon, 31 Aug 2026 01:26:16 +0000</pubDate>
-    </item>
-    <item>
-      <title>City SC News: Sources: Southampton loans USMNT's Downs to St. Louis</title>
-      <description>St. Louis City SC is set to acquire United States forward Damion Downs on loan from English Championship side Southampton, a source with direct knowledge of the deal confirmed to ESPN.</description>
-      <link>https://www.espn.com/soccer/story/_/id/49785118/southampton-loans-usmnt-downs-st-louis</link>
-      <guid isPermaLink="false">citysc-news-49785118</guid>
-      <pubDate>Mon, 31 Aug 2026 19:28:32 +0000</pubDate>
     </item>
     <item>
       <title>Cardinals News: Price drop! Stream Cardinals games for $19.99</title>
@@ -74,41 +53,6 @@
       <link>https://www.mlb.com/cardinals/news/top-questions-cardinals-september-2026</link>
       <guid isPermaLink="false">cardinals-web-https://www.mlb.com/cardinals/news/top-questions-cardinals-september-2026</guid>
       <pubDate>Wed, 02 Sep 2026 15:50:47 +0000</pubDate>
-    </item>
-    <item>
-      <title>City SC News: Stadium</title>
-      <description>Stadium</description>
-      <link>https://www.stlcitysc.com/news/topics/stadium</link>
-      <guid isPermaLink="false">citysc-web-https://www.stlcitysc.com/news/topics/stadium</guid>
-      <pubDate>Wed, 02 Sep 2026 17:02:08 +0000</pubDate>
-    </item>
-    <item>
-      <title>City SC News: Academy</title>
-      <description>Academy</description>
-      <link>https://www.stlcitysc.com/news/topics/academy</link>
-      <guid isPermaLink="false">citysc-web-https://www.stlcitysc.com/news/topics/academy</guid>
-      <pubDate>Wed, 02 Sep 2026 17:03:08 +0000</pubDate>
-    </item>
-    <item>
-      <title>City SC News: CITY2</title>
-      <description>CITY2</description>
-      <link>https://www.stlcitysc.com/news/topics/city2</link>
-      <guid isPermaLink="false">citysc-web-https://www.stlcitysc.com/news/topics/city2</guid>
-      <pubDate>Wed, 02 Sep 2026 17:04:08 +0000</pubDate>
-    </item>
-    <item>
-      <title>City SC News: Team</title>
-      <description>Team</description>
-      <link>https://www.stlcitysc.com/news/topics/team</link>
-      <guid isPermaLink="false">citysc-web-https://www.stlcitysc.com/news/topics/team</guid>
-      <pubDate>Wed, 02 Sep 2026 17:05:08 +0000</pubDate>
-    </item>
-    <item>
-      <title>City SC News: News</title>
-      <description>News</description>
-      <link>https://www.stlcitysc.com/news/index</link>
-      <guid isPermaLink="false">citysc-web-https://www.stlcitysc.com/news/index</guid>
-      <pubDate>Wed, 02 Sep 2026 17:06:08 +0000</pubDate>
     </item>
     <item>
       <title>Cardinals (Away) vs Los Angeles Dodgers — Scheduled</title>
