@@ -105,8 +105,8 @@ def get_cardinals_games():
 
 def get_city_sc_games():
     url = (
-        "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/teams"
-        f"/21812/schedule"
+        "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/teams/"
+        f"{CITY_SC_TEAM_ID}/schedule"
     )
 
     items = []
@@ -120,27 +120,27 @@ def get_city_sc_games():
 
     for event in data.get("events", []):
         try:
-          competitors = event["competitions"][0]["competitors"]
-city_sc = next(
-    c for c in competitors
-    if str(c.get("team", {}).get("id")) == str(CITY_SC_TEAM_ID)
-)
-opponent = next(c for c in competitors if c is not city_sc)
+            competitors = event["competitions"][0]["competitors"]
+            city_sc = next(
+                c for c in competitors
+                if str(c.get("team", {}).get("id")) == str(CITY_SC_TEAM_ID)
+            )
+            opponent = next(c for c in competitors if c is not city_sc)
 
-is_home = city_sc.get("homeAway") == "home"
-venue = "Home" if is_home else "Away"
-status_desc = event.get("status", {}).get("type", {}).get("description", "Scheduled")
-completed = event.get("status", {}).get("type", {}).get("completed", False)
+            is_home = city_sc.get("homeAway") == "home"
+            venue = "Home" if is_home else "Away"
+            status_desc = event.get("status", {}).get("type", {}).get("description", "Scheduled")
+            completed = event.get("status", {}).get("type", {}).get("completed", False)
 
-game_dt = _parse_iso(event["date"], ["%Y-%m-%dT%H:%MZ", "%Y-%m-%dT%H:%M:%SZ"])
+            game_dt = _parse_iso(event["date"], ["%Y-%m-%dT%H:%MZ", "%Y-%m-%dT%H:%M:%SZ"])
 
-opponent_id = str(opponent.get("team", {}).get("id"))
-opponent_name = opponent["team"]["displayName"]
-# ESPN fills TBD bracket slots with our own team's info instead of "TBD"
-if opponent_id == str(CITY_SC_TEAM_ID):
-    opponent_name = "TBD"
+            opponent_id = str(opponent.get("team", {}).get("id"))
+            opponent_name = opponent["team"]["displayName"]
+            if opponent_id == str(CITY_SC_TEAM_ID):
+                opponent_name = "TBD"
 
-title = f"City SC ({venue}) vs {opponent_name} — {status_desc}"
+            title = f"City SC ({venue}) vs {opponent_name} — {status_desc}"
+            description = title + "."
 
             if completed:
                 city_score = city_sc.get("score", "?")
