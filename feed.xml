@@ -4,7 +4,28 @@
     <title>STL Sports Schedule — Cardinals &amp; City SC</title>
     <link>https://collectivestatic.github.io/mystlsportsrss/feed.xml</link>
     <description>Auto-updated schedule and results for the St. Louis Cardinals and St. Louis City SC</description>
-    <lastBuildDate>Wed, 02 Sep 2026 16:09:02 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Sep 2026 16:10:43 +0000</lastBuildDate>
+    <item>
+      <title>City SC (Home) vs St. Louis CITY SC — Scheduled</title>
+      <description>City SC (Home) vs St. Louis CITY SC — Scheduled.</description>
+      <link>https://collectivestatic.github.io/mystlsportsrss/feed.xml</link>
+      <guid isPermaLink="false">citysc-761519</guid>
+      <pubDate>Sat, 04 Apr 2026 23:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>City SC (Away) vs St. Louis CITY SC — Scheduled</title>
+      <description>City SC (Away) vs St. Louis CITY SC — Scheduled.</description>
+      <link>https://collectivestatic.github.io/mystlsportsrss/feed.xml</link>
+      <guid isPermaLink="false">citysc-761661</guid>
+      <pubDate>Fri, 17 Jul 2026 00:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>City SC (Home) vs St. Louis CITY SC — Scheduled</title>
+      <description>City SC (Home) vs St. Louis CITY SC — Scheduled.</description>
+      <link>https://collectivestatic.github.io/mystlsportsrss/feed.xml</link>
+      <guid isPermaLink="false">citysc-761732</guid>
+      <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Cardinals (Home) vs Pittsburgh Pirates — Final</title>
       <description>Pittsburgh Pirates at St. Louis Cardinals. Status: Final. Final score: Pittsburgh Pirates 5 – 4 St. Louis Cardinals.</description>
