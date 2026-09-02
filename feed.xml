@@ -4,27 +4,153 @@
     <title>STL Sports Schedule — Cardinals &amp; City SC</title>
     <link>https://collectivestatic.github.io/mystlsportsrss/feed.xml</link>
     <description>Auto-updated schedule and results for the St. Louis Cardinals and St. Louis City SC</description>
-    <lastBuildDate>Wed, 02 Sep 2026 16:10:43 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Sep 2026 16:21:22 +0000</lastBuildDate>
     <item>
-      <title>City SC (Home) vs St. Louis CITY SC — Scheduled</title>
-      <description>City SC (Home) vs St. Louis CITY SC — Scheduled.</description>
+      <title>City SC (Home) vs Charlotte FC — Scheduled</title>
+      <description>City SC (Home) vs Charlotte FC — Scheduled.</description>
+      <link>https://collectivestatic.github.io/mystlsportsrss/feed.xml</link>
+      <guid isPermaLink="false">citysc-761439</guid>
+      <pubDate>Sat, 21 Feb 2026 19:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>City SC (Away) vs San Diego FC — Scheduled</title>
+      <description>City SC (Away) vs San Diego FC — Scheduled.</description>
+      <link>https://collectivestatic.github.io/mystlsportsrss/feed.xml</link>
+      <guid isPermaLink="false">citysc-761468</guid>
+      <pubDate>Mon, 02 Mar 2026 02:15:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>City SC (Home) vs Seattle Sounders FC — Scheduled</title>
+      <description>City SC (Home) vs Seattle Sounders FC — Scheduled.</description>
+      <link>https://collectivestatic.github.io/mystlsportsrss/feed.xml</link>
+      <guid isPermaLink="false">citysc-761477</guid>
+      <pubDate>Sun, 08 Mar 2026 01:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>City SC (Away) vs LAFC — Scheduled</title>
+      <description>City SC (Away) vs LAFC — Scheduled.</description>
+      <link>https://collectivestatic.github.io/mystlsportsrss/feed.xml</link>
+      <guid isPermaLink="false">citysc-761495</guid>
+      <pubDate>Sun, 15 Mar 2026 02:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>City SC (Home) vs New England Revolution — Scheduled</title>
+      <description>City SC (Home) vs New England Revolution — Scheduled.</description>
+      <link>https://collectivestatic.github.io/mystlsportsrss/feed.xml</link>
+      <guid isPermaLink="false">citysc-761507</guid>
+      <pubDate>Sun, 22 Mar 2026 00:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>City SC (Away) vs New York City FC — Scheduled</title>
+      <description>City SC (Away) vs New York City FC — Scheduled.</description>
       <link>https://collectivestatic.github.io/mystlsportsrss/feed.xml</link>
       <guid isPermaLink="false">citysc-761519</guid>
       <pubDate>Sat, 04 Apr 2026 23:30:00 +0000</pubDate>
     </item>
     <item>
-      <title>City SC (Away) vs St. Louis CITY SC — Scheduled</title>
-      <description>City SC (Away) vs St. Louis CITY SC — Scheduled.</description>
+      <title>City SC (Away) vs FC Dallas — Scheduled</title>
+      <description>City SC (Away) vs FC Dallas — Scheduled.</description>
+      <link>https://collectivestatic.github.io/mystlsportsrss/feed.xml</link>
+      <guid isPermaLink="false">citysc-761538</guid>
+      <pubDate>Sun, 12 Apr 2026 00:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>City SC (Away) vs Seattle Sounders FC — Scheduled</title>
+      <description>City SC (Away) vs Seattle Sounders FC — Scheduled.</description>
+      <link>https://collectivestatic.github.io/mystlsportsrss/feed.xml</link>
+      <guid isPermaLink="false">citysc-761555</guid>
+      <pubDate>Sun, 19 Apr 2026 01:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>City SC (Home) vs San Jose Earthquakes — Scheduled</title>
+      <description>City SC (Home) vs San Jose Earthquakes — Scheduled.</description>
+      <link>https://collectivestatic.github.io/mystlsportsrss/feed.xml</link>
+      <guid isPermaLink="false">citysc-761576</guid>
+      <pubDate>Sun, 26 Apr 2026 00:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>City SC (Away) vs Austin FC — Scheduled</title>
+      <description>City SC (Away) vs Austin FC — Scheduled.</description>
+      <link>https://collectivestatic.github.io/mystlsportsrss/feed.xml</link>
+      <guid isPermaLink="false">citysc-761599</guid>
+      <pubDate>Sun, 03 May 2026 21:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>City SC (Away) vs Colorado Rapids — Scheduled</title>
+      <description>City SC (Away) vs Colorado Rapids — Scheduled.</description>
+      <link>https://collectivestatic.github.io/mystlsportsrss/feed.xml</link>
+      <guid isPermaLink="false">citysc-761606</guid>
+      <pubDate>Sun, 10 May 2026 01:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>City SC (Home) vs LAFC — Scheduled</title>
+      <description>City SC (Home) vs LAFC — Scheduled.</description>
+      <link>https://collectivestatic.github.io/mystlsportsrss/feed.xml</link>
+      <guid isPermaLink="false">citysc-761625</guid>
+      <pubDate>Thu, 14 May 2026 00:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>City SC (Away) vs D.C. United — Scheduled</title>
+      <description>City SC (Away) vs D.C. United — Scheduled.</description>
+      <link>https://collectivestatic.github.io/mystlsportsrss/feed.xml</link>
+      <guid isPermaLink="false">citysc-761630</guid>
+      <pubDate>Sat, 16 May 2026 23:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>City SC (Home) vs Austin FC — Scheduled</title>
+      <description>City SC (Home) vs Austin FC — Scheduled.</description>
+      <link>https://collectivestatic.github.io/mystlsportsrss/feed.xml</link>
+      <guid isPermaLink="false">citysc-761644</guid>
+      <pubDate>Sat, 23 May 2026 18:45:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>City SC (Home) vs Sporting Kansas City — Scheduled</title>
+      <description>City SC (Home) vs Sporting Kansas City — Scheduled.</description>
       <link>https://collectivestatic.github.io/mystlsportsrss/feed.xml</link>
       <guid isPermaLink="false">citysc-761661</guid>
       <pubDate>Fri, 17 Jul 2026 00:30:00 +0000</pubDate>
     </item>
     <item>
-      <title>City SC (Home) vs St. Louis CITY SC — Scheduled</title>
-      <description>City SC (Home) vs St. Louis CITY SC — Scheduled.</description>
+      <title>City SC (Away) vs LA Galaxy — Scheduled</title>
+      <description>City SC (Away) vs LA Galaxy — Scheduled.</description>
+      <link>https://collectivestatic.github.io/mystlsportsrss/feed.xml</link>
+      <guid isPermaLink="false">citysc-761678</guid>
+      <pubDate>Thu, 23 Jul 2026 02:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>City SC (Home) vs Colorado Rapids — Scheduled</title>
+      <description>City SC (Home) vs Colorado Rapids — Scheduled.</description>
+      <link>https://collectivestatic.github.io/mystlsportsrss/feed.xml</link>
+      <guid isPermaLink="false">citysc-761688</guid>
+      <pubDate>Sun, 26 Jul 2026 00:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>City SC (Home) vs Real Salt Lake — Scheduled</title>
+      <description>City SC (Home) vs Real Salt Lake — Scheduled.</description>
+      <link>https://collectivestatic.github.io/mystlsportsrss/feed.xml</link>
+      <guid isPermaLink="false">citysc-761705</guid>
+      <pubDate>Sun, 02 Aug 2026 00:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>City SC (Away) vs San Jose Earthquakes — Scheduled</title>
+      <description>City SC (Away) vs San Jose Earthquakes — Scheduled.</description>
+      <link>https://collectivestatic.github.io/mystlsportsrss/feed.xml</link>
+      <guid isPermaLink="false">citysc-761721</guid>
+      <pubDate>Sun, 16 Aug 2026 02:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>City SC (Away) vs Sporting Kansas City — Scheduled</title>
+      <description>City SC (Away) vs Sporting Kansas City — Scheduled.</description>
       <link>https://collectivestatic.github.io/mystlsportsrss/feed.xml</link>
       <guid isPermaLink="false">citysc-761732</guid>
       <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>City SC (Home) vs Houston Dynamo FC — Scheduled</title>
+      <description>City SC (Home) vs Houston Dynamo FC — Scheduled.</description>
+      <link>https://collectivestatic.github.io/mystlsportsrss/feed.xml</link>
+      <guid isPermaLink="false">citysc-761747</guid>
+      <pubDate>Sun, 23 Aug 2026 00:30:00 +0000</pubDate>
     </item>
     <item>
       <title>Cardinals (Home) vs Pittsburgh Pirates — Final</title>
@@ -32,6 +158,13 @@
       <link>https://collectivestatic.github.io/mystlsportsrss/feed.xml</link>
       <guid isPermaLink="false">cardinals-823010</guid>
       <pubDate>Sun, 30 Aug 2026 18:15:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>City SC (Home) vs FC Dallas — Scheduled</title>
+      <description>City SC (Home) vs FC Dallas — Scheduled.</description>
+      <link>https://collectivestatic.github.io/mystlsportsrss/feed.xml</link>
+      <guid isPermaLink="false">citysc-761769</guid>
+      <pubDate>Sun, 30 Aug 2026 23:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Cardinals (Away) vs Los Angeles Dodgers — Final</title>
