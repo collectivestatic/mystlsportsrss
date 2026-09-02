@@ -1,10 +1,17 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <rss version="2.0">
   <channel>
-    <title>STL Sports Schedule — Cardinals &amp; City SC</title>
+    <title>STL Sports Schedule &amp; News — Cardinals &amp; City SC</title>
     <link>https://collectivestatic.github.io/mystlsportsrss/feed.xml</link>
-    <description>Auto-updated schedule and results for the St. Louis Cardinals and St. Louis City SC</description>
-    <lastBuildDate>Wed, 02 Sep 2026 16:21:22 +0000</lastBuildDate>
+    <description>Auto-updated schedule and news for the St. Louis Cardinals and St. Louis City SC</description>
+    <lastBuildDate>Wed, 02 Sep 2026 16:43:19 +0000</lastBuildDate>
+    <item>
+      <title>Cardinals News: Solve today's Cardinals trivia puzzle</title>
+      <description>Solve today's Cardinals trivia puzzle</description>
+      <link>https://www.mlb.com/app/atbat/cardinals/daily-walkoff</link>
+      <guid isPermaLink="false">cardinals-web-https://www.mlb.com/app/atbat/cardinals/daily-walkoff</guid>
+      <pubDate>Tue, 03 Feb 2026 15:40:52 +0000</pubDate>
+    </item>
     <item>
       <title>City SC (Home) vs Charlotte FC — Scheduled</title>
       <description>City SC (Home) vs Charlotte FC — Scheduled.</description>
@@ -167,11 +174,130 @@
       <pubDate>Sun, 30 Aug 2026 23:00:00 +0000</pubDate>
     </item>
     <item>
+      <title>City SC News: St. Louis CITY SC vs. FC Dallas - Game Highlights</title>
+      <description>Watch the Game Highlights from St. Louis CITY SC vs. FC Dallas, 08/30/2026</description>
+      <link>https://www.espn.com/video/clip/_/id/49778459/st-louis-city-sc-vs-fc-dallas-game-highlights</link>
+      <guid isPermaLink="false">citysc-news-49778459</guid>
+      <pubDate>Mon, 31 Aug 2026 01:26:16 +0000</pubDate>
+    </item>
+    <item>
+      <title>Cardinals News: How two Cardinals relievers turned their seasons around</title>
+      <description>How two Cardinals relievers turned their seasons around</description>
+      <link>https://www.mlb.com/cardinals/news/gordon-graceffo-luis-gastelum-improving-in-cardinals-bullpen</link>
+      <guid isPermaLink="false">cardinals-web-https://www.mlb.com/cardinals/news/gordon-graceffo-luis-gastelum-improving-in-cardinals-bullpen</guid>
+      <pubDate>Mon, 31 Aug 2026 15:33:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>City SC News: Sources: Southampton loans USMNT's Downs to St. Louis</title>
+      <description>St. Louis City SC is set to acquire United States forward Damion Downs on loan from English Championship side Southampton, a source with direct knowledge of the deal confirmed to ESPN.</description>
+      <link>https://www.espn.com/soccer/story/_/id/49785118/southampton-loans-usmnt-downs-st-louis</link>
+      <guid isPermaLink="false">citysc-news-49785118</guid>
+      <pubDate>Mon, 31 Aug 2026 19:28:32 +0000</pubDate>
+    </item>
+    <item>
+      <title>Cardinals News: Price drop! Stream Cardinals games for $19.99</title>
+      <description>Price drop! Stream Cardinals games for $19.99</description>
+      <link>https://www.mlb.com/cardinals/news/cardinals-tv-2026-season</link>
+      <guid isPermaLink="false">cardinals-web-https://www.mlb.com/cardinals/news/cardinals-tv-2026-season</guid>
+      <pubDate>Tue, 01 Sep 2026 13:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Cardinals News: Ragsdale makes 2026 All-Breakout Prospect Team</title>
+      <description>Ragsdale makes 2026 All-Breakout Prospect Team</description>
+      <link>https://www.mlb.com/cardinals/news/breakout-prospects-in-mlb-2026</link>
+      <guid isPermaLink="false">cardinals-web-https://www.mlb.com/cardinals/news/breakout-prospects-in-mlb-2026</guid>
+      <pubDate>Tue, 01 Sep 2026 23:15:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Cardinals (Away) vs Los Angeles Dodgers — Final</title>
       <description>St. Louis Cardinals at Los Angeles Dodgers. Status: Final. Final score: St. Louis Cardinals 13 – 8 Los Angeles Dodgers.</description>
       <link>https://collectivestatic.github.io/mystlsportsrss/feed.xml</link>
       <guid isPermaLink="false">cardinals-823908</guid>
       <pubDate>Wed, 02 Sep 2026 02:10:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Cardinals News: 'Like I was dreaming about': Bernal sparks Cards in MLB debut</title>
+      <description>'Like I was dreaming about': Bernal sparks Cards in MLB debut</description>
+      <link>https://www.mlb.com/cardinals/news/cardinals-prospect-leo-bernal-promoted-to-majors</link>
+      <guid isPermaLink="false">cardinals-web-https://www.mlb.com/cardinals/news/cardinals-prospect-leo-bernal-promoted-to-majors</guid>
+      <pubDate>Wed, 02 Sep 2026 06:52:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Cardinals News: Latest Cardinals injuries &amp; transactions</title>
+      <description>Latest Cardinals injuries &amp; transactions</description>
+      <link>https://www.mlb.com/cardinals/news/cardinals-injuries-and-roster-moves</link>
+      <guid isPermaLink="false">cardinals-web-https://www.mlb.com/cardinals/news/cardinals-injuries-and-roster-moves</guid>
+      <pubDate>Wed, 02 Sep 2026 07:16:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Cardinals News: 4 numbers that tell the story of Cards' wild, historic night in LA</title>
+      <description>4 numbers that tell the story of Cards' wild, historic night in LA</description>
+      <link>https://www.mlb.com/cardinals/news/numbers-behind-cardinals-all-time-offensive-game-at-dodger-stadium</link>
+      <guid isPermaLink="false">cardinals-web-https://www.mlb.com/cardinals/news/numbers-behind-cardinals-all-time-offensive-game-at-dodger-stadium</guid>
+      <pubDate>Wed, 02 Sep 2026 07:34:58 +0000</pubDate>
+    </item>
+    <item>
+      <title>Cardinals News: Here are 5 questions that matter for Cards' stretch run</title>
+      <description>Here are 5 questions that matter for Cards' stretch run</description>
+      <link>https://www.mlb.com/cardinals/news/top-questions-cardinals-september-2026</link>
+      <guid isPermaLink="false">cardinals-web-https://www.mlb.com/cardinals/news/top-questions-cardinals-september-2026</guid>
+      <pubDate>Wed, 02 Sep 2026 15:50:47 +0000</pubDate>
+    </item>
+    <item>
+      <title>City SC News: Soccer 101</title>
+      <description>Soccer 101</description>
+      <link>https://www.stlcitysc.com/news/topics/soccer-101</link>
+      <guid isPermaLink="false">citysc-web-https://www.stlcitysc.com/news/topics/soccer-101</guid>
+      <pubDate>Wed, 02 Sep 2026 16:36:19 +0000</pubDate>
+    </item>
+    <item>
+      <title>City SC News: eMLS</title>
+      <description>eMLS</description>
+      <link>https://www.stlcitysc.com/news/topics/emls</link>
+      <guid isPermaLink="false">citysc-web-https://www.stlcitysc.com/news/topics/emls</guid>
+      <pubDate>Wed, 02 Sep 2026 16:37:19 +0000</pubDate>
+    </item>
+    <item>
+      <title>City SC News: Community</title>
+      <description>Community</description>
+      <link>https://www.stlcitysc.com/news/topics/community/index</link>
+      <guid isPermaLink="false">citysc-web-https://www.stlcitysc.com/news/topics/community/index</guid>
+      <pubDate>Wed, 02 Sep 2026 16:38:19 +0000</pubDate>
+    </item>
+    <item>
+      <title>City SC News: Stadium</title>
+      <description>Stadium</description>
+      <link>https://www.stlcitysc.com/news/topics/stadium</link>
+      <guid isPermaLink="false">citysc-web-https://www.stlcitysc.com/news/topics/stadium</guid>
+      <pubDate>Wed, 02 Sep 2026 16:39:19 +0000</pubDate>
+    </item>
+    <item>
+      <title>City SC News: Academy</title>
+      <description>Academy</description>
+      <link>https://www.stlcitysc.com/news/topics/academy</link>
+      <guid isPermaLink="false">citysc-web-https://www.stlcitysc.com/news/topics/academy</guid>
+      <pubDate>Wed, 02 Sep 2026 16:40:19 +0000</pubDate>
+    </item>
+    <item>
+      <title>City SC News: CITY2</title>
+      <description>CITY2</description>
+      <link>https://www.stlcitysc.com/news/topics/city2</link>
+      <guid isPermaLink="false">citysc-web-https://www.stlcitysc.com/news/topics/city2</guid>
+      <pubDate>Wed, 02 Sep 2026 16:41:19 +0000</pubDate>
+    </item>
+    <item>
+      <title>City SC News: Team</title>
+      <description>Team</description>
+      <link>https://www.stlcitysc.com/news/topics/team</link>
+      <guid isPermaLink="false">citysc-web-https://www.stlcitysc.com/news/topics/team</guid>
+      <pubDate>Wed, 02 Sep 2026 16:42:19 +0000</pubDate>
+    </item>
+    <item>
+      <title>City SC News: News</title>
+      <description>News</description>
+      <link>https://www.stlcitysc.com/news/index</link>
+      <guid isPermaLink="false">citysc-web-https://www.stlcitysc.com/news/index</guid>
+      <pubDate>Wed, 02 Sep 2026 16:43:19 +0000</pubDate>
     </item>
     <item>
       <title>Cardinals (Away) vs Los Angeles Dodgers — Scheduled</title>
