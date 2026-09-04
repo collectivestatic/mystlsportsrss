@@ -255,7 +255,12 @@ def get_citysc_website_news(limit=NEWS_LIMIT):
     try:
         resp = requests.get(CITYSC_NEWS_URL, timeout=REQUEST_TIMEOUT, headers=REQUEST_HEADERS)
         resp.raise_for_status()
-        soup = BeautifulSoup(resp.text, "html.parser")
+        # Use raw bytes (resp.content), not resp.text — requests sometimes
+        # mis-guesses the charset when a site's headers don't declare one
+        # cleanly, which corrupts non-ASCII characters (e.g. "Â" showing up
+        # in place of a non-breaking space). BeautifulSoup auto-detects
+        # encoding from the bytes/meta tags more reliably.
+        soup = BeautifulSoup(resp.content, "html.parser")
     except Exception as e:
         print(f"[CITY SC Website] fetch failed: {e}")
         return items
@@ -272,7 +277,12 @@ def get_citysc_website_news(limit=NEWS_LIMIT):
         if tail == "" or tail.startswith("topics") or tail.startswith("all") or tail.startswith("latest") or tail.startswith("index"):
             continue
 
-        title = a.get_text(strip=True)
+        # Prefer the <a title="..."> attribute — it holds the clean
+        # headline. The visible link text works for most cards, but the
+        # site's featured top story wraps the teaser paragraph into the
+        # same <a>, which would otherwise run headline + teaser together.
+        title = (a.get("title") or "").strip() or a.get_text(strip=True)
+        title = title[:200]  # safety cap in case a future card also lacks a clean title attr
         if not title or href in seen_links:
             continue
         seen_links.add(href)
@@ -312,14 +322,15 @@ def get_stlmag_sports_news(limit=NEWS_LIMIT):
     try:
         resp = requests.get(STLMAG_SPORTS_URL, timeout=REQUEST_TIMEOUT, headers=REQUEST_HEADERS)
         resp.raise_for_status()
-        soup = BeautifulSoup(resp.text, "html.parser")
+        soup = BeautifulSoup(resp.content, "html.parser")  # see CITY SC scraper comment on why not resp.text
     except Exception as e:
         print(f"[STL Mag Sports] fetch failed: {e}")
         return items
 
     seen_links = set()
     for a in soup.find_all("a", href=True):
-        title = a.get_text(strip=True)
+        title = (a.get("title") or "").strip() or a.get_text(strip=True)
+        title = title[:200]
         if not title or len(title) < 8:
             continue
         if not _matches_team({"headline": title, "description": ""}, STLMAG_KEYWORDS):
