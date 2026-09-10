@@ -86,72 +86,6 @@ def _matches_team(article, keywords):
     return any(kw.lower() in haystack for kw in keywords)
 
 
-# ---- Cardinals schedule (MLB Stats API) ---------------------------------
-
-def get_cardinals_games():
-    """Returns completed Cardinals games only (status == "Final").
-
-    Upcoming/scheduled games are intentionally excluded — the schedule is
-    already tracked in a calendar, so this feed focuses on daily outcomes.
-    DAYS_AHEAD is kept small just to catch a game that finishes after the
-    scraper's last run, not to surface the future schedule.
-    """
-    start = (datetime.now(timezone.utc) - timedelta(days=DAYS_BEHIND)).strftime("%Y-%m-%d")
-    end = (datetime.now(timezone.utc) + timedelta(days=DAYS_AHEAD)).strftime("%Y-%m-%d")
-    url = (
-        "https://statsapi.mlb.com/api/v1/schedule"
-        f"?sportId=1&teamId={CARDINALS_TEAM_ID}&startDate={start}&endDate={end}"
-    )
-
-    items = []
-    try:
-        resp = requests.get(url, timeout=REQUEST_TIMEOUT)
-        resp.raise_for_status()
-        data = resp.json()
-    except Exception as e:
-        print(f"[Cardinals] fetch failed: {e}")
-        return items
-
-    for date_block in data.get("dates", []):
-        for game in date_block.get("games", []):
-            try:
-                status = game["status"]["detailedState"]
-                if status != "Final":
-                    continue  # skip scheduled/in-progress/postponed — outcomes only
-
-                away = game["teams"]["away"]["team"]["name"]
-                home = game["teams"]["home"]["team"]["name"]
-                game_dt = _parse_iso(game["gameDate"], ["%Y-%m-%dT%H:%M:%SZ"])
-
-                is_home = home == "St. Louis Cardinals"
-                opponent = away if is_home else home
-                venue = "Home" if is_home else "Away"
-
-                away_score = game["teams"]["away"].get("score")
-                home_score = game["teams"]["home"].get("score")
-
-                title = f"Cardinals ({venue}) vs {opponent} — Final"
-                description = f"{away} at {home}. Status: {status}."
-                if away_score is not None and home_score is not None:
-                    description += f" Final score: {away} {away_score} – {home_score} {home}."
-                    won = (is_home and home_score > away_score) or (not is_home and away_score > home_score)
-                    title = f"Cardinals {'W' if won else 'L'} vs {opponent} — {away_score}-{home_score}" \
-                        if is_home else f"Cardinals {'W' if won else 'L'} @ {opponent} — {away_score}-{home_score}"
-
-                items.append({
-                    "title": title,
-                    "description": description,
-                    "pub_date": game_dt,
-                    "guid": f"cardinals-{game.get('gamePk')}",
-                    "link": FEED_LINK,
-                })
-            except (KeyError, ValueError) as e:
-                print(f"[Cardinals] skipping malformed game entry: {e}")
-                continue
-
-    print(f"[Cardinals] parsed {len(items)} completed games")
-    return items
-
 
 # ---- Cardinals league news (ESPN, filtered) ------------------------------
 
@@ -191,48 +125,6 @@ def get_cardinals_news(limit=NEWS_LIMIT):
     print(f"[Cardinals News] parsed {len(items)} articles")
     return items
 
-
-
-# ---- Cardinals official website news (MLB.com RSS) -----------------------
-
-def get_cardinals_website_news(limit=NEWS_LIMIT):
-    """Uses MLB.com's official Cardinals RSS feed."""
-    url = "https://www.mlb.com/cardinals/feeds/news/rss.xml"
-    items = []
-    try:
-        resp = requests.get(url, timeout=REQUEST_TIMEOUT)
-        resp.raise_for_status()
-        root = ET.fromstring(resp.content)
-    except Exception as e:
-        print(f"[Cardinals Website] fetch failed: {e}")
-        return items
-
-    for item in root.findall("./channel/item"):
-        try:
-            title = (item.findtext("title") or "").strip()
-            link = (item.findtext("link") or FEED_LINK).strip()
-            guid = (item.findtext("guid") or link).strip()
-            pub_date_raw = (item.findtext("pubDate") or "").strip()
-
-            pub_date = parsedate_to_datetime(pub_date_raw)
-            if pub_date.tzinfo is None:
-                pub_date = pub_date.replace(tzinfo=timezone.utc)
-
-            items.append({
-                "title": f"Cardinals News: {title}",
-                "description": title,
-                "pub_date": pub_date,
-                "guid": f"cardinals-web-{guid}",
-                "link": link,
-            })
-        except Exception as e:
-            print(f"[Cardinals Website] skipping malformed item: {e}")
-            continue
-        if len(items) >= limit:
-            break
-
-    print(f"[Cardinals Website] parsed {len(items)} articles")
-    return items
 
 
 # ---- CITY SC official website news (scraped, first team only) -----------
