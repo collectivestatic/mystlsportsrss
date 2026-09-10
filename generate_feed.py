@@ -268,7 +268,7 @@ def build_rss(items):
 
 def main():
     items = (
-        + get_citysc_website_news()
+        get_citysc_website_news()
         + get_stlmag_sports_news()
     )
     build_rss(items)
