@@ -4,11 +4,6 @@ Generates an RSS feed for St. Louis Cardinals game outcomes and news,
 plus St. Louis CITY SC (first team) news.
 
 Data sources:
-  - Cardinals game outcomes: MLB Stats API (statsapi.mlb.com) — free, no key.
-    Only completed ("Final") games are included — upcoming schedule is
-    intentionally left out since it's already tracked in a calendar.
-  - Cardinals/City SC league news: ESPN news endpoints, filtered by team — free, no key
-  - Cardinals website news: MLB.com's official Cardinals RSS feed — free, no key
   - CITY SC official website news: scraped from stlcitysc.com's "Team" topic
     page, which is the site's own first-team-only category (excludes CITY2,
     Academy, Community, Stadium, eMLS content) — no feed available, HTML scrape.
