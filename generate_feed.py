@@ -30,12 +30,6 @@ from bs4 import BeautifulSoup
 
 # ---- Config -----------------------------------------------------------
 
-CARDINALS_TEAM_ID = 138       # St. Louis Cardinals (MLB Stats API team id)
-
-
-DAYS_BEHIND = 3               # look back this far for completed games
-DAYS_AHEAD = 1                 # small buffer only — schedule itself lives in your calendar
-
 NEWS_LIMIT = 5                # max articles pulled per news source, per team
 
 CITYSC_NEWS_URL = "https://www.stlcitysc.com/news/topics/team"  # first-team-only topic page
@@ -274,7 +268,6 @@ def build_rss(items):
 
 def main():
     items = (
-        + get_cardinals_news()
         + get_citysc_website_news()
         + get_stlmag_sports_news()
     )
